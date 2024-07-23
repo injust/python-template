@@ -1,0 +1,5 @@
+-r requirements.txt
+basedpyright>=1.19.1
+mypy[faster-cache]>=1.13.0
+pre-commit>=4.0.1
+ruff>=0.7.1
