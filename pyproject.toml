@@ -1,0 +1,28 @@
+[project]
+requires-python = ">=3.12"
+
+[tool.basedpyright]
+reportAny = false
+reportExplicitAny = false
+reportPrivateUsage = false
+reportUnannotatedClassAttribute = false
+reportUnusedCallResult = false
+reportUnusedParameter = false
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = [
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+    "I",   # isort
+    "E",   # pycodestyle
+    "F",   # Pyflakes
+    "UP",  # pyupgrade
+    "RUF", # Ruff-specific rules
+]
+ignore = ["E501", "RUF200"]
