@@ -15,6 +15,9 @@ strict = true
 [tool.ruff]
 line-length = 120
 
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+
 [tool.ruff.lint]
 extend-select = [
     "E",   # pycodestyle
@@ -26,3 +29,7 @@ extend-select = [
     "RUF", # Ruff-specific rules
 ]
 ignore = ["E501", "RUF200"]
+
+[tool.ruff.lint.isort]
+# TODO(https://github.com/astral-sh/ruff/issues/9006): Unset this if the default changes
+split-on-trailing-comma = false
