@@ -12,6 +12,9 @@ reportUnusedParameter = false
 [tool.ruff]
 line-length = 120
 
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+
 [tool.ruff.lint]
 extend-select = [
   "YTT",  # flake8-2020
@@ -76,3 +79,6 @@ ignore = [
   "TRY003",  # raise-vanilla-args
   "TRY400",  # error-instead-of-exception
 ]
+
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false  # https://github.com/astral-sh/ruff/issues/9006
