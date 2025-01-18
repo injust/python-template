@@ -19,3 +19,4 @@ repos:
     hooks:
       - id: mypy
         args: [--disable-error-code=import-untyped]
+        additional_dependencies: [orjson]
