@@ -31,13 +31,13 @@ skip-magic-trailing-comma = true
 
 [tool.ruff.lint]
 extend-select = [
+    "B",   # flake8-bugbear
     "E",   # pycodestyle
     "F",   # Pyflakes
-    "UP",  # pyupgrade
-    "B",   # flake8-bugbear
-    "SIM", # flake8-simplify
     "I",   # isort
     "RUF", # Ruff-specific rules
+    "SIM", # flake8-simplify
+    "UP",  # pyupgrade
 ]
 ignore = ["E501", "RUF200"]
 
