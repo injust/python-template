@@ -89,5 +89,5 @@ ignore = [
 split-on-trailing-comma = false
 
 [tool.ruff.lint.per-file-ignores]
-# TODO(https://github.com/astral-sh/ruff/pull/18400): Remove when `useless-import-alias` ignores `__init__.py` files
+# TODO(Ruff 2026): Remove when https://github.com/astral-sh/ruff/pull/18400 is promoted to stable
 "__init__.py" = ["PLC0414"]
