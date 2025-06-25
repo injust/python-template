@@ -85,6 +85,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
 # TODO(https://github.com/astral-sh/ruff/issues/9006): Unset this if the default changes
 split-on-trailing-comma = false
 
