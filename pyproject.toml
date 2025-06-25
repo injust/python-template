@@ -67,6 +67,7 @@ extend-select = [
     "RUF",   # Ruff-specific rules
     "TRY",   # tryceratops
 ]
+future-annotations = true
 ignore = [
     "E501",
     "N806",
@@ -86,6 +87,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
 # TODO(https://github.com/astral-sh/ruff/issues/9006): Unset this if the default changes
 split-on-trailing-comma = false
 
