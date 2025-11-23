@@ -1,6 +1,6 @@
 # tombi: lint.rules.table-key-required.disabled = true
 [project]
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 
 [tool.basedpyright]
 reportAny = false
@@ -34,6 +34,7 @@ skip-magic-trailing-comma = true
 
 [tool.ruff.lint]
 extend-select = [
+  "YTT",  # flake8-2020
   "ANN",  # flake8-annotations
   "ASYNC",  # flake8-async
   "S",  # flake8-bandit
@@ -46,11 +47,11 @@ extend-select = [
   "T10",  # flake8-debugger
   "EM",  # flake8-errmsg
   "EXE",  # flake8-executable
-  "FA",  # flake8-future-annotations
   "ISC",  # flake8-implicit-str-concat
   "ICN",  # flake8-import-conventions
   "LOG",  # flake8-logging
   "G",  # flake8-logging-format
+  "INP",  # flake8-no-pep420
   "PIE",  # flake8-pie
   "RSE",  # flake8-raise
   "RET",  # flake8-return
@@ -75,7 +76,6 @@ extend-select = [
   "RUF",  # Ruff-specific rules
   "TRY",  # tryceratops
 ]
-future-annotations = true
 ignore = [
   "ANN401",  # any-type
   "E501",  # line-too-long
@@ -98,5 +98,4 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-required-imports = ["from __future__ import annotations"]
 split-on-trailing-comma = false  # https://github.com/astral-sh/ruff/issues/9006
