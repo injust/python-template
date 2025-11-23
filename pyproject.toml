@@ -1,6 +1,6 @@
 # tombi: lint.rules.table-key-required.disabled = true
 [project]
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 
 [tool.basedpyright]
 reportAny = false
@@ -51,6 +51,7 @@ extend-select = [
   "ICN",  # flake8-import-conventions
   "LOG",  # flake8-logging
   "G",  # flake8-logging-format
+  "INP",  # flake8-no-pep420
   "PIE",  # flake8-pie
   "RSE",  # flake8-raise
   "RET",  # flake8-return
@@ -98,6 +99,5 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-required-imports = ["from __future__ import annotations"]
 # TODO(https://github.com/astral-sh/ruff/issues/9006): Unset this if the default changes
 split-on-trailing-comma = false
