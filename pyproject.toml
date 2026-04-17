@@ -18,62 +18,25 @@ line-length = 120
 skip-magic-trailing-comma = true
 
 [tool.ruff.lint]
-extend-select = [
-  "YTT",  # flake8-2020
-  "ANN",  # flake8-annotations
-  "ASYNC",  # flake8-async
-  "S",  # flake8-bandit
-  "BLE",  # flake8-blind-except
-  "FBT",  # flake8-boolean-trap
-  "B",  # flake8-bugbear
-  "A",  # flake8-builtins
-  "C4",  # flake8-comprehensions
-  "DTZ",  # flake8-datetimez
-  "T10",  # flake8-debugger
-  "EM",  # flake8-errmsg
-  "EXE",  # flake8-executable
-  "ISC",  # flake8-implicit-str-concat
-  "ICN",  # flake8-import-conventions
-  "LOG",  # flake8-logging
-  "G",  # flake8-logging-format
-  "INP",  # flake8-no-pep420
-  "PIE",  # flake8-pie
-  "RSE",  # flake8-raise
-  "RET",  # flake8-return
-  "SIM",  # flake8-simplify
-  "SLOT",  # flake8-slots
-  "TID",  # flake8-tidy-imports
-  "TD",  # flake8-todos
-  "TC",  # flake8-type-checking
-  "ARG",  # flake8-unused-arguments
-  "PTH",  # flake8-use-pathlib
-  "FLY",  # flynt
-  "I",  # isort
-  "N",  # pep8-naming
-  "PERF",  # Perflint
-  "E",  # pycodestyle
-  "W",  # pycodestyle
-  "F",  # Pyflakes
-  "PGH",  # pygrep-hooks
-  "PL",  # Pylint
-  "UP",  # pyupgrade
-  "FURB",  # refurb
-  "RUF",  # Ruff-specific rules
-  "TRY",  # tryceratops
-]
+select = ["ALL"]
 ignore = [
   "ANN401",  # any-type
+  "C90",  # mccabe
+  "COM",  # flake8-commas
+  "D",  # pydocstyle
   "E501",  # line-too-long
+  "ERA",  # eradicate
+  "FIX",  # flake8-fixme
   "N806",  # non-lowercase-variable-in-function
-  "PLE1205",  # logging-too-many-args
   "PLR0911",  # too-many-return-statements
   "PLR0912",  # too-many-branches
   "PLR0915",  # too-many-statements
   "PLR2004",  # magic-value-comparison
-  "PLW0603",  # global-statement
   "RUF200",  # invalid-pyproject-toml
   "S101",  # assert
   "S311",  # suspicious-non-cryptographic-random-usage
+  "SLF",  # flake8-self
+  "T20",  # flake8-print
   "TD002",  # missing-todo-author
   "TD003",  # missing-todo-link
   "TD004",  # missing-todo-colon
